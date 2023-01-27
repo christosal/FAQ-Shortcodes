@@ -1,0 +1,31 @@
+.accFAQ_Title {
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+
+
+/* Style the accordion panel. Note: hidden by default */
+.accFAQ_answer {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accFAQ_Title:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.accFAQ_Title.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
